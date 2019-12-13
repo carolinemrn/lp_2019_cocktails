@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">ENVOYER</button>
+    </form>
+
+    <a href="{% url 'app_cocktail_list' %}">RETOUR</a>
+
+{% endblock %}

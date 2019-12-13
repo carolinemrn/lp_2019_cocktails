@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="" method="post">
+    {% csrf_token %}
+    <button type="submit">SUPPRIMER</button>
+    </form>
+
+    <a href="{% url 'app_cocktail_list' %}">RETOUR</a>
+
+{% endblock %}
